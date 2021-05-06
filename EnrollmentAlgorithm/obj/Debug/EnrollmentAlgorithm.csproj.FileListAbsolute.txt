@@ -1,0 +1,15 @@
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\EnrollmentAlgorithm.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\EnrollmentAlgorithm.pdb
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\dotMemory.Unit.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\MathNet.Numerics.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\dotMemory.Unit.xml
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\MathNet.Numerics.xml
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\obj\Debug\EnrollmentAlgorithm.csprojAssemblyReference.cache
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\obj\Debug\EnrollmentAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\obj\Debug\EnrollmentAlgorithm.csproj.CopyComplete
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\obj\Debug\EnrollmentAlgorithm.dll
+C:\Users\sous2\Source\Workspaces\EnrollmentAlgorithm\EnrollmentAlgorithm\obj\Debug\EnrollmentAlgorithm.pdb

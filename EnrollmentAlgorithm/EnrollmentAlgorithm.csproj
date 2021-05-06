@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1F95F14-9A51-463D-B05D-C1AE495E007C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnrollmentAlgorithm</RootNamespace>
+    <AssemblyName>EnrollmentAlgorithm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="dotMemory.Unit, Version=103.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.dotMemoryUnit.2.2.20160412.92019\lib\dotMemory.Unit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.Signed.3.13.1\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.2-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Methods\ClosedForm\CoreClosedForm.cs" />
+    <Compile Include="Methods\DistributionCreation.cs" />
+    <Compile Include="Methods\EnrollmentObjectCreation.cs" />
+    <Compile Include="Methods\Export\EnrollmentDataWorkbookExporter.cs" />
+    <Compile Include="Methods\Export\RandomizationDataWorkbookExporter.cs" />
+    <Compile Include="Methods\Export\ScreeningDataWorkbookExporter.cs" />
+    <Compile Include="Methods\Export\SIVDataWorkbookExporter.cs" />
+    <Compile Include="Methods\Export\SSVDataWorkbookExporter.cs" />
+    <Compile Include="Methods\Export\SummaryDataExporter.cs" />
+    <Compile Include="Methods\Export\CoreWorkbookExporter.cs" />
+    <Compile Include="Methods\ExtensionMethods.cs" />
+    <Compile Include="Methods\HelperMethods.cs" />
+    <Compile Include="Methods\MonteCarlo\CoreMonteCarlo.cs" />
+    <Compile Include="Methods\MonteCarlo\BaselineMonteCarlo.cs" />
+    <Compile Include="Methods\MonteCarlo\ReprojectionMonteCarlo.cs" />
+    <Compile Include="Methods\Summary\Accrual.cs" />
+    <Compile Include="Methods\Summary\CoreSummary.cs" />
+    <Compile Include="Methods\Summary\StudyStartUp.cs" />
+    <Compile Include="NumericalIntegration.cs" />
+    <Compile Include="Objects\Additional\AccrualValuesByDate.cs" />
+    <Compile Include="Objects\Additional\AccruedValues.cs" />
+    <Compile Include="Objects\Additional\BaseAccrualInformation.cs" />
+    <Compile Include="Objects\Additional\ClosedFormApproximation.cs" />
+    <Compile Include="Objects\Additional\ConditionalValues.cs" />
+    <Compile Include="Objects\Additional\CumulatedAccrualData.cs" />
+    <Compile Include="Objects\Additional\DistributionParameter.cs" />
+    <Compile Include="Objects\Additional\EnrollmentBreakParameter.cs" />
+    <Compile Include="Objects\Additional\DateSpan.cs" />
+    <Compile Include="Objects\Additional\MeanAndErrorEstimates.cs" />
+    <Compile Include="Objects\Additional\MeanAndErrorEstimatesDates.cs" />
+    <Compile Include="Objects\Additional\PatientAccrualInformation.cs" />
+    <Compile Include="Objects\Additional\Percentiles.cs" />
+    <Compile Include="Objects\Additional\ProgressReporter.cs" />
+    <Compile Include="Objects\Additional\RecruitmentAccrual.cs" />
+    <Compile Include="Objects\Additional\SimulationValues.cs" />
+    <Compile Include="Objects\Additional\SSUAccrualInformation.cs" />
+    <Compile Include="Objects\Additional\SummarizedAccrualResults.cs" />
+    <Compile Include="Objects\Additional\SummarizedSSUResults.cs" />
+    <Compile Include="Objects\Enrollment\BaseEnrollmentObject.cs" />
+    <Compile Include="Objects\Enrollment\CountryParameter.cs" />
+    <Compile Include="Objects\Enrollment\SimulationResults.cs" />
+    <Compile Include="Objects\Enrollment\SiteParameter.cs" />
+    <Compile Include="Objects\Enrollment\TrialParameter.cs" />
+    <Compile Include="Objects\Enums\AccrualType.cs" />
+    <Compile Include="Objects\Enums\DistributionType.cs" />
+    <Compile Include="Objects\Enums\EnrollmentAccrualConstraint.cs" />
+    <Compile Include="Objects\Semio\CellLocation.cs" />
+    <Compile Include="Objects\Semio\CellUtilities.cs" />
+    <Compile Include="Objects\Semio\ColorCriteriaManager.cs" />
+    <Compile Include="Objects\Semio\ColorScore.cs" />
+    <Compile Include="Objects\Semio\ColorStyle.cs" />
+    <Compile Include="Objects\Semio\DateTimeHelper.cs" />
+    <Compile Include="Objects\Semio\Directory.cs" />
+    <Compile Include="Objects\Semio\ExcelChartHelper.cs" />
+    <Compile Include="Objects\Semio\ExcelDataExporterBase.cs" />
+    <Compile Include="Objects\Semio\ExcelExporter.cs" />
+    <Compile Include="Objects\Semio\ExportDataParameters.cs" />
+    <Compile Include="Objects\Semio\ExportImage.cs" />
+    <Compile Include="Objects\Semio\File.cs" />
+    <Compile Include="Objects\Semio\FileHeaderOptions.cs" />
+    <Compile Include="Objects\Semio\FileHeaderOptionsDataExporter.cs" />
+    <Compile Include="Objects\Semio\Formats.cs" />
+    <Compile Include="Objects\Semio\IDirectory.cs" />
+    <Compile Include="Objects\Semio\IExcelExporter.cs" />
+    <Compile Include="Objects\Semio\IFile.cs" />
+    <Compile Include="Objects\Semio\IFileHeaderOptionsDataExporter.cs" />
+    <Compile Include="Objects\Semio\IIOFactory.cs" />
+    <Compile Include="Objects\Semio\ImageDataInspector.cs" />
+    <Compile Include="Objects\Semio\IOFactory.cs" />
+    <Compile Include="Objects\Semio\IWorkbookExporter.cs" />
+    <Compile Include="Objects\Semio\SpreadsheetCell.cs" />
+    <Compile Include="Objects\Semio\SpreadsheetCellFormula.cs" />
+    <Compile Include="Objects\Semio\SpreadsheetGrid.cs" />
+    <Compile Include="Objects\Semio\WorkbookExporterBase.cs" />
+    <Compile Include="Objects\Semio\WorksheetUtilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\Semio\Address.cs" />
+    <Compile Include="Objects\Semio\Bindable.cs" />
+    <Compile Include="Objects\Semio\CollectionExtensions.cs" />
+    <Compile Include="Objects\Semio\CountryEnrollment.cs" />
+    <Compile Include="Objects\Semio\CountryInfo.cs" />
+    <Compile Include="Objects\Semio\DateTimeExtensions.cs" />
+    <Compile Include="Objects\Semio\EnrollmentCohort.cs" />
+    <Compile Include="Objects\Semio\EnrollmentCollection.cs" />
+    <Compile Include="Objects\Semio\EnrollmentDelay.cs" />
+    <Compile Include="Objects\Semio\HistoricalPatientRuleEnum.cs" />
+    <Compile Include="Objects\Semio\InvestigationalEntityLocation.cs" />
+    <Compile Include="Objects\Semio\InvestigationalEntityRegion.cs" />
+    <Compile Include="Objects\Semio\InvestigatorEnrollment.cs" />
+    <Compile Include="Objects\Semio\ItemPropertyChangedEventArgs.cs" />
+    <Compile Include="Objects\Semio\PropertySupport.cs" />
+    <Compile Include="Objects\Semio\QuickRuleHistoryItem.cs" />
+    <Compile Include="Objects\Semio\ResharperAnnotations.cs" />
+    <Compile Include="Objects\Semio\VariableRate.cs" />
+    <Compile Include="Objects\Semio\VariableRateCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
